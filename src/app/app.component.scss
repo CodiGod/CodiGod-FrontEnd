@@ -1,0 +1,40 @@
+.container {
+  max-width: 1240px;
+  max-height: 900px;
+  height: 95vh;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  position: relative;
+  margin: 0 auto;
+  .pricipal {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+    app-buscador {
+      position: absolute;
+
+      width: 100%;
+    }
+  }
+}
+::-webkit-scrollbar {
+  z-index: 10;
+  width: 6px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  z-index: 10;
+  background-color: rgb(21 20 26 / 63%);
+  border-radius: 10px;
+}

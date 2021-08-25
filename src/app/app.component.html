@@ -1,0 +1,9 @@
+<div class="container" [class]="dat ? 'h' : 'c'" style="color: #808191;background-color: var(--color-negro);">
+
+
+  <app-nav (recibido)="rr($event)"></app-nav>
+  <div class="pricipal">
+    <app-buscador style="background: var(--color-negro);"></app-buscador>
+    <router-outlet></router-outlet>
+  </div>
+</div>
